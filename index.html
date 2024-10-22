@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan Kuis Matematika</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h2 id="question">Soal akan muncul di sini</h2>
+        <input type="text" id="answer" placeholder="Jawaban kamu di sini">
+        <p id="timer">Waktu: 10s</p>
+        <button id="start-button" onclick="startGame()">Mulai Permainan</button>
+        <button id="restart-button" onclick="startGame()" style="display: none;">Mulai Ulang</button> <!-- Tombol restart -->
+        <p id="score">Skor: 0</p>
+        <p id="lives">Nyawa: 3</p>
+        <p id="level">Level: 1</p>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
